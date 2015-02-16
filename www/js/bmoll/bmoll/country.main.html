@@ -1,0 +1,47 @@
+<div class="page page-dashboard" data-ng-controller="CountryListCtrl">
+    <section class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Crea un nuevo país</strong></div>
+        <div class="panel-body">
+            <form class="form-inline" role="form">
+                <div class="form-group">
+                    <label class="sr-only" for="name">Code</label>
+                    <input type="text" class="form-control" id="code" placeholder="Enter name" ng-model="country.code" >
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name" ng-model="country.name" >
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="population">Population</label>
+                    <input type="text" class="form-control" id="population" placeholder="Population" ng-model="country.population">
+                </div>
+                <button type="submit" class="btn btn-info"  ng-click="insert(country)">Add</button>
+            </form>
+        </div>
+    </section>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <strong><span class="glyphicon glyphicon-th"></span>Países</strong>
+        </div>
+        <div class="panel-body table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Poblacion</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="country in countries">
+                    <td><a href="#/countries/{{country.code}}">{{country.code}}</a></td>
+                    <td><span class="label label-info">{{country.name}}</span></td>
+                    <td>{{country.population}}</td><td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+  

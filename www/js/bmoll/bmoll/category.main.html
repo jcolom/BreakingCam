@@ -1,0 +1,26 @@
+<div class="page page-dashboard" data-ng-controller="CountryListCtrl">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <strong><span class="glyphicon glyphicon-th"></span>&#160;Categorias</strong>
+        </div>
+        <div class="panel-body table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="category in categories">
+                    <td>{{category.id}}</td>
+                    <td><span class="label label-info">{{category.name}}</span></td>
+                    <td>{{category.description}}</td><td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+  

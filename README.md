@@ -1,2 +1,2 @@
 # BreakingCam
-Ionic App
+App de Ionic

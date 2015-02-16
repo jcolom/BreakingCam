@@ -1,0 +1,25 @@
+<style>
+  #cam {
+    display: block;
+  }  
+</style>
+<ion-view view-title="Images">
+  	<ion-content style="background: url(img/wallpaper.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+  		<div class="list card" ng-repeat="imagenes in Images">
+		  <div class="item item-avatar">
+		    <img ng-src="http://www.planificaciondeportiva.es{{imagenes.uri}}">
+		    <h2>{{imagenes.label}}</h2>
+		    <p>{{imagenes.name}}</p>
+		  </div>
+
+		  <div class="item item-image">
+		    <img class="full-image" ng-src="http://www.planificaciondeportiva.es{{imagenes.uri}}">
+		  </div>
+
+		  <a class="item item-icon-left" href="#">
+		    <i class="icon ion-chatbox"></i>
+		    Comment about this image
+		  </a>
+		</div>
+  	</ion-content>
+</ion-view>
