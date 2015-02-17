@@ -1,2 +1,0 @@
-# BreakingCam
-App de Ionic
