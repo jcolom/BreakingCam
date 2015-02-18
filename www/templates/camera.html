@@ -1,0 +1,30 @@
+<style>
+  #cam {
+    display: none;
+  }  
+</style>
+<ion-view view-title="Camera">
+  	<ion-content style="background: url(img/wallpaper.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+  		<center>
+		  	<img class="img_camera" ng-show="imgURI !== undefined" ng-src="{{imgURI}}">
+		    <img class="img_camera" ng-show="imgURI === undefined" ng-src="http://placehold.it/300x300">
+		    <br>
+			<div class="list">
+			  	<label class="item item-input item-floating-label">
+			    	<span class="input-label">Name</span>
+			    	<input type="text" placeholder="Name">
+			  	</label>
+			  	<label class="item item-input item-floating-label">
+			    	<span class="input-label">Category</span>
+			    	<input type="text" placeholder="Category">
+			  	</label>
+			  	<label class="item item-input item-floating-label">
+			    	<span class="input-label">Description</span>
+			    	<input type="textarea" placeholder="Description">
+			  	</label>
+			</div>
+			<button class="button button-positive" ng-click="takePicture()">Take Picture</button>
+			<button class="button button-positive" ng-click="Done()">Done</button>
+		</center>
+	</ion-content>
+</ion-view>

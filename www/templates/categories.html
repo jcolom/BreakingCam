@@ -1,0 +1,16 @@
+<style>
+  #cam {
+    display: block;
+  }  
+</style>
+<ion-view view-title="Categories">
+  	<ion-content style="background: url(img/wallpaper.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+	  	<div class="card">
+		    <ion-list id="categories_list">
+		      <ion-item ng-repeat="category in categories" href="#/app/category/{{category.id}}">
+		        {{category.name}}
+		      </ion-item>
+		    </ion-list>
+		</div>
+  	</ion-content>
+</ion-view>

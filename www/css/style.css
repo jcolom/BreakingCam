@@ -1,0 +1,87 @@
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+#categories_list .item-content, .sidebar-nav-item {
+  padding: 16px 49px 16px 16px;
+}
+
+.img_camera {
+  margin: 12px;
+}
+
+.button-float {
+  background: #387ef5 !important;
+  color: white !important;
+  z-index: 12 !important;
+  position: absolute !important;
+  bottom: 10px !important;
+  right: 10px !important;
+  border-radius: 50% !important;
+  width: 3em !important;
+  height: 3em !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+  -webkit-transition: 0.2s linear !important;
+  transition: 0.2s linear !important;
+  -webkit-transition-property: -webkit-transform, all !important;
+  transition-property: transform, all !important;
+}
+
+.button-float:hover {
+  -webkit-transform: translate3d(0, -1px, 0) !important;
+  transform: translate3d(0, -1px, 0) !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4) !important;
+  background: #11c1f3 !important;
+  color: black !important;
+}
+
+/*balanced is class added to ion-content, since ion-content*/
+/*is made up of multiple pieces and is a pain to style each*/
+.balanced {
+  background-color: #33cd5f !important;
+  color: #ffffff;
+}
+
+/*Set the background to transparent for ion-item*/
+.balanced .item {
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #333333;
+  color: #F0F1F1;
+  font-size: 1.5em;
+}
+
+.balanced .item i {
+  font-size: 1.6em;
+}
+
+.balanced .item p {
+  font-size: 1em;
+}
+
+/*Changes the border for the last item*/
+.balanced .item:last-child {
+  border-bottom: 1px solid #333333;
+}
+
+/*Ion-item adds item-complex and an inner div, .item-content*/
+/* this needs to be transparent too, but doesnt need borders*/
+.balanced .item-complex .item-content, .balanced .item-radio .item-content {
+  background-color: transparent;
+}
+
+/*Just makes the type white*/
+.balanced h2,
+.balanced h3,
+.balanced p,
+.balanced a {
+  color: #F0F1F1;
+}
+
+.card {
+  font-size: 1.5em;
+}

@@ -1,0 +1,18 @@
+<style>
+  #cam {
+    display: block;
+  }  
+</style>
+<ion-view view-title="Items">
+  	<ion-content style="background: url(img/wallpaper.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+	  	<div class="card">
+	  		<div class="list">
+				<ion-item class="item item-thumbnail-left" ng-repeat="items in Item" href="#/app/images/{{items.id}}">
+					<img src="img/goku.png">
+					<h2>{{items.name}}</h2>
+					<h3>{{items.description}}</h3>
+				</ion-item>
+			</div>
+	    </div>
+  	</ion-content>
+</ion-view>
